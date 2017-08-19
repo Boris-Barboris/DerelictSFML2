@@ -423,6 +423,8 @@ extern( C ) @nogc nothrow {
     alias da_sfRenderWindow_getSystemHandle = sfWindowHandle function( const( sfRenderWindow )* );
     alias da_sfRenderWindow_clear = void function( sfRenderWindow*,sfColor lor );
     alias da_sfRenderWindow_setView = void function( sfRenderWindow*,const( sfView )* );
+    alias da_sfRenderWindow_setScissor = void function( sfRenderWindow*,sfIntRect );
+    alias da_sfRenderWindow_setScissorTest = void function( sfRenderWindow*,sfBool );
     alias da_sfRenderWindow_getView = const( sfView )* function( const( sfRenderWindow )* );
     alias da_sfRenderWindow_getDefaultView = const( sfView )* function( const( sfRenderWindow )* );
     alias da_sfRenderWindow_getViewport = sfIntRect function( const( sfRenderWindow )*,const( sfView )* );
@@ -841,6 +843,8 @@ __gshared {
     da_sfRenderWindow_getSystemHandle sfRenderWindow_getSystemHandle;
     da_sfRenderWindow_clear sfRenderWindow_clear;
     da_sfRenderWindow_setView sfRenderWindow_setView;
+    da_sfRenderWindow_setScissor sfRenderWindow_setScissor;
+    da_sfRenderWindow_setScissorTest sfRenderWindow_setScissorTest;
     da_sfRenderWindow_getView sfRenderWindow_getView;
     da_sfRenderWindow_getDefaultView sfRenderWindow_getDefaultView;
     da_sfRenderWindow_getViewport sfRenderWindow_getViewport;
