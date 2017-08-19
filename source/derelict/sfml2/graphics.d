@@ -1252,6 +1252,9 @@ class DerelictSFML2GraphicsLoader : SharedLibLoader {
         bindFunc( cast( void** )&sfRenderWindow_getSystemHandle, "sfRenderWindow_getSystemHandle" );
         bindFunc( cast( void** )&sfRenderWindow_clear, "sfRenderWindow_clear" );
         bindFunc( cast( void** )&sfRenderWindow_setView, "sfRenderWindow_setView" );
+        bindFunc( cast( void** )&sfRenderWindow_setScissor, "sfRenderWindow_setScissor" );
+        bindFunc( cast( void** )&sfRenderWindow_setScissorTest, "sfRenderWindow_setScissorTest" );
+        bindFunc( cast( void** )&sfRenderWindow_setView, "sfRenderWindow_setView" );
         bindFunc( cast( void** )&sfRenderWindow_getView, "sfRenderWindow_getView" );
         bindFunc( cast( void** )&sfRenderWindow_getDefaultView, "sfRenderWindow_getDefaultView" );
         bindFunc( cast( void** )&sfRenderWindow_getViewport, "sfRenderWindow_getViewport" );
