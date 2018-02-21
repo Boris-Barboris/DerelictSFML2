@@ -370,6 +370,7 @@ struct sfContextSettings {
     uint majorVersion;
     uint minorVersion;
     sfUint32 attributeFlags;
+    sfBool sRgbCapable;
 }
 
 // Window/WindowHandle.h
