@@ -297,7 +297,7 @@ extern( C ) @nogc nothrow {
     alias da_sfFont_createFromStream = sfFont* function( sfInputStream* );
     alias da_sfFont_copy = sfFont* function( const( sfFont )* );
     alias da_sfFont_destroy = void function( sfFont* );
-    alias da_sfFont_getGlyph = sfGlyph function( sfFont*,sfUint32,uint,sfBool );
+    alias da_sfFont_getGlyph = sfGlyph function( sfFont*,sfUint32,uint,sfBool,float );
     alias da_sfFont_getKerning = float function( sfFont*,sfUint32,sfUint32,uint );
     alias da_sfFont_getLineSpacing = float function( sfFont*,uint );
     alias da_sfFont_getUnderlinePosition = float function( sfFont*,uint );
